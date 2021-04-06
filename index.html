@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>portfolio</title>
+   
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+     <!-- magnific-popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+     <!-- 배경 slide 추가 -->
+	 <link rel="stylesheet" href="css/slicarousel.css">
+     <link rel="stylesheet" href="css/s_style.css">
+  
+	 <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.js"></script>
+      <script src="../js/respond.min.js"></script>
+      <script src="../js/IE9.js"></script>
+    <![endif]-->
+	<style>    
+	    .container .imCnt {width:980px;height:408px;margin:0 auto}
+        .container h1 {text-align:center}
+        .container .mtitle {margin-top:130px;width:1200px;height:200px;line-height:200px;text-align:center;background-color:rgba(255,255,255,0.5);color:white !important;
+		font-weight:bold;border-radius:20px}
+        /* 레이아웃 설정 */
+        #gallery .col-xs-12{margin-bottom: 3%; padding: 0 10px;}
+        #gallery .col-xs-12:nth-child(2)>div{width: 100%; height: 357px; margin-bottom: 22px;}
+        #gallery .col-md-6{height: 735px;}
+        #gallery .col-md-4{height: 300px;}
+
+        /* 링크 태그 설정 */
+        #gallery .col-xs-12:nth-child(1)>a, 
+        #gallery .col-xs-12:nth-child(2)>div>a,
+        #gallery .col-md-4>a{
+            display: block; width: 100%; height: 100%; position: relative; overflow: hidden;
+        }
+
+        /* 트랜지션 설정 */
+        #gallery .col-xs-12>a>img,
+        #gallery .col-xs-12>div>a>img,
+        #gallery .col-xs-12 .caption,
+        #gallery .col-xs-12 .caption>div,
+        #gallery .col-xs-12 .caption button{
+            -webkit-transition: all ease 0.6s;
+            -moz-transition: all ease 0.6s;
+            -o-transition: all ease 0.6s;
+            transition: all ease 0.6s;
+        }
+
+        /* 이미지 설정 */
+        #gallery .col-xs-12>a>img, #gallery .col-xs-12>div>a>img{
+            width: 100%;
+        }
+		
+        #gallery .col-xs-12>a:hover>img,
+        #gallery .col-xs-12>div>a:hover>img{
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+
+        /* 캡션박스 설정 */
+        #gallery .col-xs-12 .caption{
+            font-size: 0.8em; font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0); 
+            position: absolute; 
+        } 
+        #gallery .col-xs-12 .caption:hover{
+            border: 1px solid rgba(255, 255, 255, 1);
+			background-color: rgba(000,150,255,0.7); 
+			/*  추가 */
+        }
+
+        #gallery .col-xs-12:nth-child(1) .caption{
+            width: 90%; height: 94%; left: 5%; top: 3%; right: 5%; bottom: 3%;
+        } 
+        #gallery .col-xs-12:nth-child(2)>div .caption{
+            width: 92%; height: 90%; left: 4%; top: 5%; right: 4%; bottom: 5%;
+        } 
+        #gallery .col-md-4 .caption{
+            width: 85%; height: 88%; left: 7%; top: 6%; right: 7%; bottom: 6%;
+        } 
+
+        /* 텍스트 박스 설정 */
+        #gallery .col-xs-12 .caption>div{
+            width: 100%; height: 100px; font-size: 2em; 
+            position: absolute; left: 0; top: 23%;
+            margin-top1: -50px; text-align: center; 
+            color: rgba(255, 255, 255, 0);           
+        }
+        #gallery .col-xs-12 .caption:hover>div{
+            color: rgba(255, 255, 255, 1);
+        }     
+
+        /* 버튼 설정 */
+        #gallery .col-xs-12 .caption button{
+            display: block; margin: auto; width: 110px; height: 35px; 
+            font: bold 0.8em/35px Arial,sans-serif; 
+            margin-top: 10px; 
+            color: rgba(0, 0, 0, 0);
+            border: 2px solid rgba(0, 0, 0, 0);
+            background-color: transparent;
+        }
+        #gallery .col-xs-12 .caption:hover button{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1); 
+            border: 2px solid rgba(255, 255, 255, 1);
+        }
+        #gallery .col-xs-12 .caption:hover button:hover{
+            color: rgba(0, 0, 0, 1); 
+            background-color: rgba(255, 255, 255, 1);
+        }
+		
+		.card {width:400px;margin:0 auto}
+        .card img {width:100%}
+		
+		/*about img*/
+		.ibox {width:60%}
+		.fontc{	color:black !important}
+		.fonts{	font-size:18px !important}
+		.fade1 {opacity:0.6;transition:all 0.5s}
+		.fade1:hover{opacity:1;}
+ 
+       .s_slide { background-position: 50% 50%; background-size: cover; }
+     </style>
+  </head>
+
+  <body data-spy="scroll" data-target="#navi">
+    
+    <!-- 상단 네비게이션 시작 -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="navi">
+      <div class="container">
+        <!-- Mobile Button & Site Logo -->
+        <div class="navbar-header">
+
+          <!-- Mobile Button Start -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnb">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Site Logo Start -->
+          <h1>
+            <a class="navbar-brand" href="#">bkweb-portfolio</a>
+          </h1>
+        </div>
+
+        <!-- Gnb Area Start -->
+        <div class="collapse navbar-collapse" id="gnb">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#intro">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+           
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            
+			<li><a href="#wpart">WEBTYPE</a></li>
+
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+      </div><!-- /.container End -->
+    </nav> <!-- 상단 네비게이션 끝 -->
+
+    <div id="wrap">
+
+      <!-- Intro Area Start -->
+      <div id="intro">
+        <div class="container">
+		    <h1 class="mtitle">WebStandard Publisher Portfolio</h1> 
+        </div> <!-- container End -->
+      </div> <!-- intro End -->
+         
+     <!-- ======= About Section ======= -->
+    <div id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./img/about.jpg" class="img-fluid ibox" alt="about">
+          </div>
+          <div class="col-md-6 pt-4 pt-lg-0 fontc">
+            <h3>About</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul>
+            <div class="row icon-boxes">
+              <div class="col-md-6">
+                <i class="bx bx-receipt"></i>
+                <h4>Basic info</h4>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Skill info</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+     <p>&nbsp;</p>
+    <!-- ======= Skills Section ======= -->
+   
+    <div class="row skills-content">
+       <div class="col-md-12">
+           <!-- Blue -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped" style="width:80%">html5 80%</div>
+		</div>
+
+		<!-- Green -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped  progress-bar-success" style="width:90%">css3 90%</div>
+		</div>
+
+		<!-- Turquoise -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped  progress-bar-warning" style="width:80%">javascript 80%</div>
+		</div>
+
+		<!-- Orange -->
+		<div class="progress">
+		   <div class="progress-bar progress-bar-striped  progress-bar-danger" style="width:90%">jQuery 90%</div>
+		</div>
+
+		<!-- Red -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar-info" style="width:80%">vue.js</div>
+		</div>
+
+		<!-- White -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped  progress-bar-warning" style="width:75%">bootstrap 75%</div>
+		</div>
+
+		<!-- Grey -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped  progress-bar-success" style="width:80%">wordpress 80%</div>
+		</div>
+        </div>
+
+       </div>
+       <!-- skill row end -->
+     </div>
+    </div><!-- End About Section -->
+           
+      <!-- Portfolio Area Start -->
+      <div id="portfolio">
+        <div class="container"> 
+		<h1>Portfolio</h1>  
+		<br /><br />
+		   <div class="row" id="gallery">            
+            <div class="col-xs-12 col-sm-6 col-md-4">                
+                <a href="img/pt01.jpg">
+                    <img src="img/pt01.jpg" alt="Photo1">                        
+                    <div class="caption">
+                        <div>SITE<br>웹표준사이트<br />xhtml/css,크로스브라우징<br/>[chrome,ie9이상,firefox]<button>WEBPHOTO</button>
+						<button onclick="window.open('http://bkweb.dothome.co.kr/port3/index.html')">WEBSITE</button></div>
+                    </div>
+                </a>
+				
+            </div>
+			 <div class="col-xs-12 col-sm-6 col-md-4">                
+                <a href="img/pt07.jpg">
+                    <img src="img/pt07.jpg" alt="Photo6">
+                    
+                   <div class="caption">
+                        <div>SITE VIEWS<br>웹표준사이트<br />xhtml/css,크로스브라우징<br> <button>WEBPHOTO</button><button onclick="window.open('http://bkweb.dothome.co.kr/kps/index.html')">WEBSITE</button></div>
+                    </div>
+                </a>                 
+            </div>
+          			
+			<div class="col-xs-12 col-sm-6 col-md-4">                
+                <a href="img/pt03.jpg">
+                    <img src="img/pt03.jpg" alt="Photo2">                        
+                    <div class="caption">
+                        <div>SITE<br>웹표준사이트<button>WEBPHOTO</button>
+						<button onclick="window.open('http://bkweb.dothome.co.kr/port3/index.html')">WEBSITE</button></div>
+                    </div>
+                </a>			
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">                
+                <a href="img/pt04.jpg">
+                    <img src="img/pt04.jpg" alt="Photo4">
+                      
+                   <div class="caption">
+                        <div>SITE<br> VIEWS <button>WEBPHOTO</button><button onclick="window.open('http://bkweb.dothome.co.kr/port3/index.html')">WEBSITE</button></div>
+                    </div>
+                </a>               
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">                
+                <a href="img/pt05.jpg">
+                    <img src="img/pt05.jpg" alt="Photo5">
+                 
+                   <div class="caption">
+                        <div>SITE<br> VIEWS <button>WEBPHOTO</button><button onclick="window.open('http://bkweb.dothome.co.kr/port3/index.html')">WEBSITE</button></div>
+                    </div>
+                </a> 
+            </div>
+			<div class="col-xs-12 col-sm-6 col-md-4">                
+                <a href="img/pt02.jpg">
+                    <img src="img/pt02.jpg" alt="Photo2">                        
+                    <div class="caption">
+                        <div>SITE<br>웹표준사이트<button>WEBPHOTO</button>
+						<button onclick="window.open('http://bkweb.dothome.co.kr/port3/index.html')">WEBSITE</button></div>
+                    </div>
+                </a>			
+            </div>       
+        </div>
+        </div> <!-- container End -->
+      </div> <!-- portfolio End -->
+    
+	   <!-- Wpart Area Start -->
+      <div id="wpart">
+        <div class="container">      
+          <h2 style="text-align:center">웹사이트유형</h2><p>&nbsp;</p>
+			  <div class="row">
+				<div class="col-sm-4">
+				 <div class="card" style="width: 18rem;">
+				  <img src="images/pic1.jpg"  class="card-img-top" alt="...">
+				  <div class="card-body">
+					<h5 class="card-title">portfolio-type1</h5>
+					<p class="card-text">포트폴리오유형1-패럴랙스스크롤 활용한 원페이지 레이아웃 웹사이트/부트스트랩4.0/웹표준</p>
+					<a href="#" onclick="window.open('./type1/index.html')"  class="btn btn-primary">SiteView</a>
+				  </div>
+				</div>
+				</div>
+				<div class="col-sm-4">
+				 <div class="card" style="width: 18rem;">
+				  <img src="images/pic2.jpg"  class="card-img-top" alt="...">
+				  <div class="card-body">
+					<h5 class="card-title">portfolio-type2</h5>
+					<p class="card-text">포트폴리오유형2-기본슬라이더와 사이트 정보레이아웃배치 웹사이트/부트스트랩4.0/웹표준</p>
+					<a href="#" onclick="window.open('./type2/index.html')"  class="btn btn-primary">SiteView</a>
+				  </div>
+				</div>
+				</div>
+				<div class="col-sm-4">
+				 <div class="card" style="width: 18rem;">
+				  <img src="images/pic3.jpg"  class="card-img-top" alt="...">
+				  <div class="card-body">
+					<h5 class="card-title">portfolio-type3</h5>
+					<p class="card-text">포트폴리오유형3-기본슬라이더와 포트폴리오레이아웃 격자배치 웹사이트/부트스트랩4.0/웹표준</p>
+					<a href="#" onclick="window.open('./type3/index.html')"  class="btn btn-primary">SiteView</a>
+				  </div>
+				</div>
+				</div>
+			  </div>
+			 
+        </div>  <!-- container End -->
+      </div> <!-- Wpart End -->
+      
+      <!-- Contact Area Start -->
+      <div id="contact">
+        <div class="container">      
+          <h1>Contact</h1><p>&nbsp;</p>
+          <div class="imCnt">
+			<!-- <img  src="http://placehold.it/980x400?text=contact" width="980" height="400" border="0" alt="contact"> -->
+            <div class="row">
+			<div class="col-md-6">
+			  <img  class="fade1" src="img/contact.jpg" alt="contact"/>
+			 </div>
+			 <div class="col-md-6">
+			  <h2>basic info</h2>
+			  <dl class="fonts">
+			  	<dt>irum</dt>
+			  	<dd>kang byung kwon</dd>
+			  	<dt>hp</dt>
+			  	<dd>010-9228-8761</dd>
+			  	<dt>mail</dt>
+			  	<dd>active87@nate.com</dd>
+			  	<dt>portfolio</dt>
+			  	<dd>http://bkweb.dothome.co.kr</dd>
+				<dt>github</dt>
+			  	<dd>https://github.com/activekang</dd>
+			  </dl>
+			 </div>		 
+			</div>
+		  </div>
+        </div>  <!-- container End -->
+      </div> <!-- contact End -->
+      
+      
+      <!-- Footer Area Start -->
+      <div id="footer">
+        <div class="container">
+          <p style="color:#000">Copyright 2021 &copy; bkweb-portfolio.co.kr  All Rights Reserved.</p>
+        </div> <!-- container End -->
+      </div> <!-- Footer End -->
+
+    </div> <!-- Wrap End -->
+
+
+    <!-- jQuery Insert -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    
+	<script src="js/slicarousel.js"></script>
+    <script>  
+	  $("div.the_slider").my_slider()
+	</script>
+   
+	<!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Sticky JS -->
+    <script src="js/sticky.js"></script>  
+
+    <script>
+      $(function(){
+
+        // scrollspy JS
+        $('body').scrollspy({ 
+          target: '#navi' ,
+          offset : 51
+        });
+
+        // 메뉴 활성화  
+        $(window).scroll(function(){
+          var scrollPos = $(window).scrollTop();
+          
+          if(scrollPos < 10){
+            $('#navi #gnb li:first').removeClass('active');
+          }
+          if(scrollPos == 0){
+            $('#navi #gnb li:first').addClass('active');
+          }
+        });
+
+      });
+    </script>
+    <!-- magnific-popup JS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- My JS -->
+    <script>
+    $(function(){
+
+        // magnificPopup JS - Image Sample
+        var imgItem = $('#gallery .col-xs-12 a');
+
+        imgItem.magnificPopup({
+            gallery: {
+              enabled:true
+            },
+            type: 'image' // this is default type
+        });
+
+    });
+    </script> 
+  </body>
+</html>
