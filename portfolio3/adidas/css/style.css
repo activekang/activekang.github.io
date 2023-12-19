@@ -1,0 +1,64 @@
+@import url(http://fonts.gooleapis.com/earlyaccess/nanumgothic.css);
+
+html,body{width: 100%;height: 100%;}
+*{margin: 0;padding: 0;}
+body,h1,h2,input,button,p,div{font-size: 12px;}
+li{list-style: none;}
+img,fieldset,iframe{border: 0;}
+img{vertical-align: top;}
+table{border-collapse: collapse;}
+
+body{color: #fff;font-family: 'nanumgothic','돋움';
+ -webkit-text-size-adjust: none;/*text크기조절방지*/}
+a{text-decoration: none;color: #fff;}
+
+/* layout style */
+#header{color: #000;}
+#header .inner{position: relative;margin: 0 auto;max-width: 1200px;
+height: 70px;}
+#visual {
+    background: #777 url(../images/v1.png) center;
+    background-size: cover;}
+#visual .inner{ position:relative;margin: 0 auto;
+    max-width: 1200px;height: 500px;}
+#container {margin: 0 auto; max-width: 1200px; margin-bottom: 20px;
+font-size: 12px;}
+#container:after {content:'';display:block;clear:both}
+#footer {height: 70px;background-color: #333;}
+#footer .inner{margin: 0 auto;max-width: 1200px;}
+
+/*header style*/
+h1{padding: 15px;}
+.gnb{position: absolute;z-index:100;right: 0;
+    bottom: 20px;width: 800px;}
+.gnb:after {content:'';display:block;clear:both}
+.gnb li {float: left;width: 25%;text-align: center;
+background-color: #333;}
+.gnb li a{display: block;font-size: 14px;
+transition: all 1s;}
+.gnb li a:hover{color: #000;background-color: #39f;}
+.gnb_btn{display: none;position: absolute;right: 0;bottom: 0;
+    color: #000;}
+.close{display: none;}   
+
+/*visual style*/
+.typo {position: absolute;left:30px;bottom:20%}
+.typo p:first-child{font-size: 45px;}
+.typo p:last-child{opacity: 0.6;}
+
+/* container style*/
+.box {float: left;width: 24%;margin: 0.5%;}
+.box a{color: #767676;transition: all 0.5s;}
+.box a:hover {color:#39f; opacity: 0.7;}
+ 
+.b1{background-color: #ff6b67;}
+.b2{background-color: #0bb613;}
+.b3{background-color: #f70;}
+.b4{background-color: #08f;}
+
+.box img{width: 100%;}
+.box p{padding: 10px;}
+.box p strong{display: block;font-size: 14px;}
+
+ /*footer style*/
+ p.copyright { padding-top:25px;text-align:center }

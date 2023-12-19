@@ -1,0 +1,57 @@
+/* mobile */
+@media all and (max-width:767px) {
+    #header{height: 50px;}
+    h1{text-align: center;}
+    h1 img{width: 60px;}
+    .gnb_btn{display: block; right: 15px;bottom: 37px;}  
+
+    .gnb {display: none;position: absolute;top:50px;
+    width: 100%;height: 200px;}
+    .gnb li{width: 100%;}
+    .gnb li a{line-height: 40px;
+    border-bottom: 1px solid #777;}
+
+    #visual {height: 300px;}
+    #visual {background: #777 url(../images/v2.png) center;
+    background-size: cover;}
+    #visual .inner{position: relative;margin: 0 auto;
+    max-width: 767px;height: 300px;}
+    .typo {display: none;}
+    
+    .box {width: 100%;background-color: rgb(137, 153, 248);}
+    .box a {color: white;}
+    .box img{float: left;margin-right: 10px;width: 50%;}
+    .box.b2 img,
+    .box.b4 img{margin: 0;margin-left: 10px;
+    float: right;text-align: right;}
+
+}
+/* tablet */
+@media all and (min-width:768px) and (max-width:1023px) {
+    h1 {text-align: center;}
+    #header .inner{height: 90px;}
+    .gnb{width: 100%;bottom: 0;}
+    .gnb li{height: 40px;line-height: 40px;
+    font-size: 20px;font-weight: bold;}
+    .gnb li a {display: block;}
+    .gnb li a:hover{
+        text-shadow: 3px 3px 5px rgba(255,255,255,0.8);
+    }
+    .gnb_btn{display: none;}  
+    #visual {height: 400px;}
+    #visual {background: #777 url(../images/v3.png) center;
+    background-size:cover;}
+    #visual .inner{position: relative;margin:0 auto;
+    max-width:1024px;height: 400px;}
+    
+    .typo {position: absolute;left: 60%;bottom: 20%}
+    .typo p:first-child{font-size: 30px;}
+    .typo p:last-child{opacity: 0.8;}
+
+    .box {width: 49%;margin: 0.5%;}
+    .box img{width: 100%;}
+}
+/* desktop */
+@media all and (min-width:1024px) {
+  .gnb_btn{display: none;}  
+}
