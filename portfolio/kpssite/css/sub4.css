@@ -1,0 +1,71 @@
+/* visual */
+#sub1_visual {width:100%;margin-top:100px}
+#sub1_visual img {width:100%; height:150px;}
+
+
+/* subWrap */
+#conWrap {width:1200px; height:2000px; margin:auto}
+#conWrap #sub2 {width:1200px; padding-top:50px ;border-bottom: 1px solid #aaa;}
+#conWrap #sub2 h2 { padding-bottom:20px; color:#555}
+
+#conWrap #nav {width:200px;margin-top:100px; float:left; background-color:#fff;}
+#conWrap #nav ul.navi {width:200px; text-indent: 10px; margin-top:1000px;}
+#conWrap ul.navi li.group {margin-bottom: 3px}
+#conWrap #nav ul.navi,
+#conWrap #nav ul.navi ul.msub {list-style: none; margin: 0; padding: 0;}
+
+
+/* sub li */
+#conWrap ul.navi li.group div.title {height: 35px; margin-bottom: 2px; line-height: 30px; color:#fff; 
+background:#369; cursor:pointer}
+#conWrap ul.navi li.group ul.msub li {height:35px; margin-bottom: 2px; line-height: 30px; background:#eee}
+#conWrap ul.navi li.group ul.msub li a {text-decoration: none; display: block; width: 100%; height: 100%; 
+color:#000}
+#conWrap ul.navi li.group ul.msub li:hover {background:#ccc}
+
+/* con1 */
+#con1 {width: 1200px; height: 2000px}
+#con1 .box8 {width: 700px; height: 100px; margin: auto;}
+
+#con1 .box8 .tit {width: 700px; height: 150px; 
+margin-left: 150px;}
+#con1 .box8 .tit h4 {text-align: center; width: 200px;
+height: 30px;background-color:#369; color:#fff;
+margin:100px 0;margin-bottom: 15px;padding-top:2px}
+
+#con1 .box8 .sub1 {width: 700px; height: 500px;
+margin-top: 70px; margin-left: 150px;}
+#con1 .box8 .sub1 h4 {margin-bottom: 20px;}
+#con1 .box8 .sub1>ul>li {width: 700px; height:30px;
+padding-top: 5px; padding-left: 5px;
+background-color:#ffcccc;
+background:url(../images/dot1.png) no-repeat 0 12px;
+background-size:10px;
+text-indent:20px}
+#con1 .box8 .sub1>ul>li:hover{background:url(../images/dot2.png) no-repeat 0 12px;
+background-size:10px;text-indent:20px}
+
+#con1 .box8 .sub2 {width: 700px; height: 350px;
+margin-top: 130px; margin-left: 150px;}
+#con1 .box8 .sub2 h4 {margin-bottom: 20px}
+#con1 .box8 .sub2>ul>li {width: 700px; height:40px;
+padding-top: 5px; padding-left: 5px;background-color:#fcc;
+background:url(../images/dot.png) no-repeat 0 12px;
+background-size:10px;text-indent:20px
+}
+
+#con1 .box8 .sub3 {width:700px;height:270px;
+margin-left:150px}
+#con1 .box8 .sub3 h4 {margin-bottom: 30px}
+#con1 .box8 .sub3 table { width:700px;
+height: 130px;border-collapse:collapse}
+#con1 .box8 .sub3 th,
+#con1 .box8 .sub3 td {border:2px solid #369;}
+
+#con1 .box8 .sub4 {width: 700px; height: 400px;
+margin-left: 150px;}
+#con1 .box8 .sub4 h4 {margin-bottom: 30px}
+#con1 .box8 .sub4>ul>li {width: 700px; height:60px;
+padding-top: 10px; padding-left: 5px;background-color:#fcc;
+background:url(../images/dot1.png) no-repeat 0 12px;
+background-size:10px;text-indent:20px}

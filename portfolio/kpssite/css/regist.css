@@ -1,0 +1,37 @@
+/* visual */
+#sub1_visual {width:100%;margin-top:100px}
+#sub1_visual img {width:100%; height:150px;}
+
+/* subWrap */
+#conWrap {width:1200px; height:1000px; margin:auto}
+#conWrap #sub2 {width:1200px; padding-top:50px ;border-bottom: 1px solid #aaa;}
+#conWrap #sub2 h2 { padding-bottom:20px; color:#555}
+
+#conWrap #nav {width:200px;margin-top:100px; float:left; background-color:#fff;}
+#conWrap #nav ul.navi {width:200px; text-indent: 10px; margin-top:1000px;}
+#conWrap ul.navi li.group {margin-bottom: 3px}
+#conWrap #nav ul.navi,
+#conWrap #nav ul.navi ul.msub {list-style: none; margin: 0; padding: 0;}
+
+/* sub li */
+#conWrap ul.navi li.group div.title {height: 35px; margin-bottom: 2px; line-height: 30px; color:#fff; 
+background:#369; cursor:pointer}
+#conWrap ul.navi li.group ul.msub li {height:35px; margin-bottom: 2px; line-height: 30px; background:#eee}
+#conWrap ul.navi li.group ul.msub li a {text-decoration: none; display: block; width: 100%; height: 100%; 
+color:#000}
+#conWrap ul.navi li.group ul.msub li:hover {background:#ccc}
+
+#con1 {width: 1200px;height: 800px;}
+#con1 .box8{width: 1200px;height: 700px;}
+
+#con1 .box8 #regform{width: 800px;height: auto;
+    padding: 20px;float: left;margin-left: 100px;
+}
+#con1 .box8 #regform > p{text-align: right;color: #f00;}
+input{width: 100%;height: 40px;border: 1px solid #999;}
+
+#frm dl dd{margin-bottom: 20px;}
+#frm div{text-align: center;}
+#frm div input{width: 370px;display: inline-block;height: 50px;
+border: 1px solid #999; background-color: #eee;margin: 0 5px;}
+#frm .on{text-align: center; color: #f00;padding-top: 10px;}

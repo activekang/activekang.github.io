@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>레이어보이기감추기</title>
+	<style>
+        *{margin: 0;padding: 0;}
+	 #box {
+            background:black;
+            color: #fff; text-align: center; 
+            position: relative;  
+		  }	
+        a#close{color: #fff;position: absolute;right: 0; bottom: 10px;}
+
+        a#view{color: #000;float:right;
+        text-decoration: none;font-size: 20px;
+        background-color: #ccc;}
+	</style>
+</head>
+<body>
+	
+	<div id="box">
+        <h1>긴급공지</h1>
+        <p>* 이상기온에 의한 여행지역 안내입니다. <br>
+        <a href="#">자세한내용</a>링크를 참조하세요</p>          
+	</div> 
+    <a href="#" id="view">&nbsp;▲&nbsp;</a>
+	<script>
+	  var view =document.getElementById('view');  //$('#view').이벤트...
+	  var box =document.getElementById('box');
+	  // var close =document.getElementById('close');
+      
+	  var isOn = false; //설정변수
+      
+	  view.onclick = function(){
+	    if(!isOn){ 
+         box.style.display = "block";    
+         isOn=true;
+		}else{	
+		 box.style.display = "none";          
+		 isOn=false;
+		}
+		return false; 
+	  }
+	</script>
+</body>
+</html>

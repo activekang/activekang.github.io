@@ -1,0 +1,21 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+
+#pt_wrap{width: 1200px;margin: 0 auto; overflow: hidden;} 
+#pt_wrap h1,#pt_wrap h3{text-align: center; color:#333}
+#pt_wrap div{float: left;width: 596px;}
+#pt_wrap div img{width: 100%;}
+#pt_wrap div ul{margin-top: 50px;margin-left: 30px;}
+#pt_wrap div ul li{height: 40px;line-height: 40px;
+font-size: 18px;}
+#pt_wrap div button{width: 200px;height: 40px;
+margin:50px 20px; border-radius: 20px;
+background-color: #aaa;color: #fff;
+border: 0;cursor: pointer;font-weight: bold;
+transition: all 0.5s;}
+#pt_wrap div button:last-child{background-color:#aaa;color:#fff;}
+
+#pt_wrap div button:hover{
+    background-color: rgb(7, 9, 162)}
+#pt_wrap div button:last-child:hover{
+    background-color: rgb(241, 59, 9)}

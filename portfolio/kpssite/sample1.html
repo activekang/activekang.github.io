@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인식의 용이성실습</title>
+     <style>
+       *{margin: 0;padding: 0;}
+       li{list-style: none;}
+       a{text-decoration: none;}
+
+       p{text-align: center;font-size: 20px;font-weight: bold;  padding: 20px;}
+       
+       .plist{width:300px;height: 40px;margin: 0 auto;}
+        .plist li{width: 30px;height: 30px;
+        background-color: #0237e2;margin: 5px 10px;float: left;}
+        .plist li a{width: 30px;height: 30px;display: block;
+         color: #fffdfd;line-height: 30px;text-align: center;
+        }
+        .plist li:nth-child(3) a{background-color: #f0d01d;
+         color: #100197;border: 2px solid #f00;
+          font-weight: bold;text-decoration: underline;
+          box-sizing: border-box;     }
+
+        .plist .prev, .plist .next{ 
+            background-color: #fff !important;   }
+        .plist .prev a, .plist .next a{color: #100197;
+         font-size: 28px;}
+
+     </style>
+</head>
+<body>
+    <!-- 페이지네이션 -->
+    <p>페이지리스트</p>
+    <ul class="plist">
+        <li class="prev"><a href="#"> &lt;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="next"><a href="#">&gt;</a></li>
+    </ul>
+</body>
+</html>
