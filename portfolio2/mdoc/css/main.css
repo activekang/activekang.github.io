@@ -1,0 +1,16 @@
+@import url(common.css);
+
+/* index스타일*/
+#container .main_visual img{    width: 100%;}
+
+#list_sub h2{font-size:1.5em;margin-bottom:15px;
+padding-left:20px;padding-top:10px;}
+#list_sub .p_list {margin-bottom:40px}
+#list_sub .p_list:after {content:'';display:block;clear:both}
+
+#list_sub .p_list li {float:left;width:50%}
+#list_sub .p_list li a {display:block;margin-right:5px;
+margin-bottom:10px}
+#list_sub .p_list li:nth-child(2n) a{margin-right:0;
+margin-left:5px} 
+#list_sub .p_list li img {width:100%}

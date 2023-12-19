@@ -1,0 +1,21 @@
+@import url(common.css);
+
+/* container_join */
+#container_join {color:#000;padding:0 5%;font-family:"나눔고딕";
+margin-top: 70px;}
+#container_join:after {content:'';display:block;clear:both;margin-bottom:40px}
+
+#container_join h1 {font-size:20px;
+    text-align:center;color:#373737;margin-top:20px;margin-bottom:20px}
+#container_join .joinBox .memjoin input {width:100%;height:50px;padding:0 10px;margin-top:20px;border-radius:4px;box-sizing:border-box;border:2px solid #373737;font-size:20px;font-family:"Godo m"}
+#container_join .joinBox .memjoin p {font-size:13px;color:#333;margin-top:5px;margin-left:5px}
+
+#container_join .joinBox .mail {margin:20px 0 30px}
+#container_join .joinBox .mail label {font-size:14px;color:#333;}
+
+#container_join .confirm {width:100%}
+#container_join .confirm input {width:48%;height:50px;line-height:50px;border-radius:4px;color:#fff;font-size:20px;font-weight:bold;font-family:"Godo m"}
+#container_join .confirm input:first-child {background:#373737;border:1px solid #373737;float:left}
+#container_join .confirm input:last-child {background:#d10208;border:1px solid #d10208;float:right}
+
+

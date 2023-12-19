@@ -1,0 +1,21 @@
+@import url(common.css);
+
+#containersub {  width: 100%; margin-top: 70px; }
+#containersub .intro_tit{margin-left: 20px;font-size: 38px; }
+#containersub .sub_tit{font-size:18px;width: 120px;height:30px;
+  line-height: 30px;background-color:#000;text-align: center;
+  color: #fff;border-radius: 20px;margin-top: 20px;margin-left: 20px;}
+#containersub .line{margin-top: 20px;border-bottom:2px solid rgb(3, 101, 166);}  
+
+#containersub .txt{width:90%;height: 80px;margin: 20px;}
+#containersub .txt p:nth-child(1){float: left;
+          width:20%;text-align: center;font-size: 20px;
+                  background-color: rgb(63, 63, 63);color: #fff;
+                  line-height: 80px;    }
+#containersub .txt p:nth-child(2){
+    width:80%;line-height: 80px;text-align: center;
+    font-size: 14px;background-color: rgb(124, 123, 123);
+    color: #fff;    }
+#containersub .intro { width: 100%; }
+#containersub .intro img{width: 100%;}
+

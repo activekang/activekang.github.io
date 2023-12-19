@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        
+        //아이디암호 입력 체크 스크립트
+        function idpwCheck(){
+            var idVal=document.getElementById("id");
+            var pwVal=document.getElementById("pw");
+
+            if(!idVal.value){
+                alert("아이디를 입력해주세요.");
+                idVal.focus();
+                return false;
+            }
+            if(!pwVal.value){
+                alert("비밀번호를 입력해주세요.");
+                pwVal.focus();
+                return false;
+            }
+            frm.submit();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Mdoc</a></h1>
+        <nav class="gnb">
+         <a href="#" class="gnb_btn" > <img src="images/gnb_btn.png" alt="menu"> </a>
+         <ul class="gnb_list">
+            <li><a href="about.html">about</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="join.html">join</a></li>
+            <li><a href="detail.html">detail</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="#">contact</a></li>
+         </ul>
+        </nav>
+    </header> <!--header end-->
+   	<!--컨텐츠 영역-->
+	<div id="container_login">
+			<h1>MDOC로그인</h1>
+			<p class="memo">로그인을 하시면 MDOC를 더 편리하게<br />이용하실 수 있습니다.</p>
+			<div class="loginPage">
+				<form action="#" method="post" name="frm" onsubmit="return idpwCheck()">
+					<fieldset>
+						<legend class="blind">로그인폼</legend>
+						<div class="inputText">
+							<p>
+								<label for="id" class="blind">ID</label>
+								<input type="text" name="id" id="id" title="아이디입력" placeholder="아이디" />
+							</p>
+							<p>
+								<label for="pw" class="blind">PASSWORD</label>
+								<input type="password" name="pw" id="pw" title="비밀번호입력" placeholder="비밀번호" />
+							</p>
+						</div><!-- inputText -->
+						<div class="save">
+							<input type="checkbox" name="saveid" id="saveID" value="id" />
+							<label for="saveID">아이디저장</label>
+							<input type="checkbox" name="savelogin" id="saveLOGIN" value="login" />
+							<label for="saveLOGIN">자동로그인</label>
+						</div>
+						<div class="inputBtn">
+							<input type="submit" value="로그인" />
+						</div>					
+					</fieldset>
+				</form>
+				<div class="find_info">
+					<a href="#">아이디/비밀번호 찾기</a>
+					<a href="join.html">회원가입</a>
+				</div>
+                <div class="snslink">
+                    <a href="#"><img src="img/h34_sns_kakaotalk.gif" alt="kak"></a>
+                    <a href="#"><img src="img/h34_sns_naver.gif" alt="nv"></a>
+                </div>
+			</div>
+		     
+    </div><!--container_login end-->
+    <footer>
+     <p class="copyright"> copyright 2023 mobile site</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+@import url(common.css);
+/* container_login */
+#container_login {color:black; margin-top: 70px;   padding:0 5%;font-family:"나눔고딕"}
+#container_login:after {content:'';display:block;clear:both;margin-bottom:40px}
+
+#container_login h1 {font-size:20px;text-align:center;color:#373737;margin-top:20px}
+#container_login .memo {font-size:15px;color:#777;margin-top:5px;text-align:center;margin-bottom:20px}
+
+#container_login .loginPage form .inputText input {width:100%;height:50px;padding:0 10px;margin-top:20px;border-radius:4px;box-sizing:border-box;border:2px solid #373737;
+    font-size:20px;font-family:"나눔고딕"}
+#container_login .loginPage form .save {width:100%;margin:10px 0}
+#container_login .loginPage form .save label {margin-right:30px;font-size:15px;color:#373737}
+
+#container_login .loginPage form .inputBtn {width:100%}
+#container_login .loginPage form .inputBtn input {width:100%;height:50px;line-height:50px;border-radius:4px;
+    background:#4b4b4b;border:1px solid #4b4b4b;
+    color:#fff;font-size:20px;font-weight:bold;font-family:"나눔고딕"}
+
+#container_login .loginPage .find_info {text-align: center;width:100%;margin-top:5%;margin-bottom: 5%;}
+#container_login .loginPage .find_info a {margin-right:30px;font-size:15px;color:#373737;}
+
+#container_login .loginPage .snslink {text-align: center;width:100%;margin-top:5%;margin-bottom: 5%;}
+

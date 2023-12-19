@@ -1,0 +1,23 @@
+@import url(common.css);
+
+#containersub {width: 100%;}
+#containersub .detail{width: 100%;margin-top: 70px;}
+#containersub .detail div{float:left;width: 50%;}
+#containersub .detail div img{width: 100%;}
+
+#containersub .dlist .tit{font-size:20px;font-weight: bold;
+                          border-bottom:2px solid #ccc; }
+#containersub .dlist ul li{
+    width: 100%;height: 24px;line-height: 24px;font-size: 12px;}
+#containersub .total {height:120px;position: relative;}
+#containersub .total span{font-size: 12px;font-weight: bold;}
+#containersub .total input{width: 40px;}
+#containersub .total label{font-size: 12px}
+#containersub .total .btn1{width: 80px;height: 40px;
+background-color: #f30;border: 0;position: absolute;top:80px; left:0}
+#containersub .total .btn2{width: 80px;height: 40px;
+background-color: #999;border: 0;position: absolute;top:80px; left:90px}
+
+#containersub .detail-info {width: 100%;}
+#containersub .detail-info p{width: 100%;}
+#containersub .detail-info p img{width: 100%;}

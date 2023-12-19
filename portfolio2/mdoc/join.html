@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link rel="stylesheet" href="css/join.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/joinscript.js"></script> 
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Mdoc</a></h1>
+        <nav class="gnb">
+         <a href="#" class="gnb_btn" > <img src="images/gnb_btn.png" alt="menu"> </a>
+		 <ul class="gnb_list">
+            <li><a href="about.html">about</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="join.html">join</a></li>
+            <li><a href="detail.html">detail</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="#">contact</a></li>
+         </ul>
+        </nav>
+    </header> <!--header end-->
+   	<!--컨텐츠 영역-->
+	<div id="container_join">
+			<h1>회원가입</h1>
+			<div class="joinBox">
+				<form action="#" method="post" name="join" onsubmit="return formCheck()">
+					<fieldset>
+						<legend class="blind">회원가입폼</legend>
+						<input type="hidden" name="idTemp" value="imsiNo7773" />
+						<div class="memjoin">
+							<label for="id" class="blind">아이디</label>
+							<input type="text" name="id" id="id" title="아이디입력" placeholder="아이디" />
+						</div>
+						<div class="memjoin">
+							<label for="pw" class="blind">비밀번호</label>
+							<input type="password" name="pw" id="pw" title="비밀번호입력" placeholder="비밀번호" />
+							<p>* 8자리 이상의 영문자, 숫자, 특수문자를 사용</p>
+						</div>
+						<div class="memjoin">
+							<label for="memberName" class="blind">이름</label>
+							<input type="text" name="memberName" id="memberName" title="이름입력" placeholder="이름" />
+						</div>
+						<div class="memjoin">
+							<label for="mail" class="blind">이메일</label>
+							<input type="text" name="mail" id="mail" title="이메일입력" placeholder="이메일" />
+						</div>
+						<div class="memjoin">
+							<label for="hp" class="blind">핸드폰</label>
+							<input type="text" name="hp" id="hp" title="핸드폰번호입력" placeholder="핸드폰번호" />
+							<p>* 숫자만 입력</p>
+						</div>
+						
+						<div class="confirm">
+                            <input type="submit" value="가입하기"/></a>
+							<input type="reset" value="취소" />					
+						</div>
+					</fieldset>
+				</form>
+			</div>
+	</div><!--container_join end-->
+    <footer>
+     <p class="copyright"> copyright 2023 mobile site</p>
+    </footer>
+</body>
+</html>

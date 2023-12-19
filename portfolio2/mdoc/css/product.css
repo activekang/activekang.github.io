@@ -1,0 +1,30 @@
+@import url(common.css);
+
+/* 상품리스트  - 베스트상품 */
+#list_sub{margin-top: 70px;}
+#list_sub h2{font-size:1.5em;margin-bottom:15px;
+padding-left:20px;padding:10px;
+background-color: rgb(6, 57, 185);color: #fff;
+}
+#list_sub .p_list {margin-bottom:40px}
+#list_sub .p_list:after {content:'';display:block;clear:both}
+#list_sub .p_list li {float:left;width:50%}
+#list_sub .p_list li a {display:block;margin-right:5px;
+margin-bottom:10px}
+#list_sub .p_list li:nth-child(2n) a{margin-right:0;
+margin-left:5px} 
+#list_sub .p_list li img {width:100%}
+
+/* 신상품 */
+#list_sub2 h2{font-size:1.5em;margin-bottom:15px;
+padding-left:20px;padding:10px;background-color: rgb(6, 57, 185);color: #fff;}
+#list_sub2 .p_list2 {margin-bottom:40px}
+#list_sub2 .p_list2:after {content:'';display:block;clear:both}
+
+#list_sub2 .p_list2 li {float:left;width:33.3%}
+#list_sub2 .p_list2 li a {display:block;margin-right:5px;
+margin-bottom:10px}
+#list_sub2 .p_list2 li:nth-child(3n) a{margin-right:0;
+margin-left:5px} 
+#list_sub2 .p_list2 li img {width:100%}
+

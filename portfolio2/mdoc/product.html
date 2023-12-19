@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품리스트</title>
+    <link rel="stylesheet" href="css/product.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Mdoc</a></h1>
+        <nav class="gnb">
+         <a href="#" class="gnb_btn" > <img src="images/gnb_btn.png" alt="menu"> </a>
+         <ul class="gnb_list">
+            <li><a href="about.html">about</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="join.html">join</a></li>
+            <li><a href="detail.html">detail</a></li>
+            <li><a href="product.html">product</a></li>
+            <li><a href="#">contact</a></li>
+         </ul>
+        </nav>
+    </header> <!--header end-->
+    <div id="container">
+        <!--  베스트상품  -->
+        <div id="list_sub">
+            <h2>베스트상품</h2>
+            <ul class="p_list">
+                <li><a href="#"><img src="images/pic1.jpg" alt="p1"></a></li>
+                <li><a href="#"><img src="images/pic2.jpg" alt="p2"></a></li>
+                <li><a href="#"><img src="images/pic3.jpg" alt="p3"></a></li>               
+                <li><a href="#"><img src="images/pic4.jpg" alt="p4"></a></li>
+            </ul>
+        </div><!-- list_sub-->
+        <div id="list_sub2">
+            <h2>신상품리스트</h2>
+            <ul class="p_list2">
+                <li><a href="#">
+                    <img src="images/pic5.jpg" alt="p1">
+                    <p style="text-align:center;">제품명: 화이트링클크림<br>
+                       가 격: 25,000원 </p>
+                </a></li>
+                <li><a href="#"><img src="images/pic6.jpg" alt="p2">
+                    <p style="text-align:center;">제품명: 화이트링클크림<br>
+                        가 격: 25,000원 </p></a></li>
+                <li><a href="#"><img src="images/pic1.jpg" alt="p3">
+                    <p style="text-align:center;">제품명: 화이트링클크림<br>
+                        가 격: 25,000원 </p></a></li>               
+                <li><a href="#"><img src="images/pic2.jpg" alt="p4"> <p style="text-align:center;">제품명: 화이트링클크림<br>
+                    가 격: 25,000원 </p></a></li>
+                <li><a href="#"><img src="images/pic3.jpg" alt="p3"> <p style="text-align:center;">제품명: 화이트링클크림<br>
+                    가 격: 25,000원 </p></a></li>               
+                <li><a href="#"><img src="images/pic4.jpg" alt="p4"> <p style="text-align:center;">제품명: 화이트링클크림<br>
+                    가 격: 25,000원 </p></a></li>
+                <li><a href="#"><img src="images/pic7.jpg" alt="p3"> <p style="text-align:center;">제품명: 화이트링클크림<br>
+                    가 격: 25,000원 </p></a></li>               
+                <li><a href="#"><img src="images/pic8.jpg" alt="p4"> <p style="text-align:center;">제품명: 화이트링클크림<br>
+                    가 격: 25,000원 </p></a></li>
+                <li><a href="#"><img src="images/pic9.jpg" alt="p3"> <p style="text-align:center;">제품명: 화이트링클크림<br>
+                    가 격: 25,000원 </p></a></li>                 
+            </ul>
+        </div><!-- list_sub2-->
+    </div>
+    <footer>
+     <p class="copyright"> copyright 2023 mobile site</p>
+    </footer>
+    <script src="slick/slick.js"></script>
+    <script>
+         $(function(){
+             $('.regular').slick({
+              dots:true,
+              arrows:false,
+              Infinite:true,
+              slidesToShow:1,
+              slidesToScroll:1,
+              autoplay:true
+             }); 
+         });
+    </script>
+</body>
+</html>

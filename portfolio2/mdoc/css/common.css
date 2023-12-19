@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*reset*/
+html,body { width:100%;height:100% }
+* {margin:0;padding:0}
+body,h1,h2,p,div,form,input,button {font-size:12px}
+ul,ol,li {list-style:none}
+img {vertical-align:top}
+img,fieldset,iframe {border:0}
+table {border-collapse:collapse}
+
+/*base*/
+body {
+ color:#767676;font:14px/21px "Nanum Gothic","Arial";
+ -webkit-text-size-adjust:none; /*글자크기조절방지*/
+ }
+ a {text-decoration:none;color:#767676}
+ .skip_nav, .blind {position:absolute;top:-9999px;font-size:0}
+
+/*layout*/
+header {position:fixed;top:0; width:100%;height:50px;
+background-color:rgba(0,0,0,0.7);z-index:99999;
+}
+#container {}
+footer {height:105px;background-color: #000;}
+
+/*header*/
+header h1 {padding:10px;font-size:24px;text-align:center}
+header a {color:#fff}
+header .gnb .gnb_btn {position:absolute;left:15px;top:16px}
+
+header .gnb .gnb_list {display:none;
+position:fixed;left:0;top:40px;z-index:100;
+width:100%;height:25%;background-color:rgba(0,0,0,0.5);
+}
+header .gnb .gnb_list li.close {display:none}
+header .gnb .gnb_list li a {display:block;padding-left:25px;
+font-size:15px;color:#fff;line-height:40px;
+background-color: #000;border-bottom:1px solid #333}
+
+/*footer*/
+footer .copyright {
+ padding-top:48px;text-align:center;
+ font-size:10px;color:white
+}
